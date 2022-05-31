@@ -9,9 +9,9 @@
   "author": "Jose Manuel Orts",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "bootstrap-icons": "^1.0.0-alpha4",
-    "jquery": "^3.5.1",
-    "jsgrid": "^1.5.3"
+    "bootstrap": "4.5.0",
+    "bootstrap-icons": "1.0.0-alpha4",
+    "jquery": "3.5.1",
+    "jsgrid": "1.5.3"
   }
 }
