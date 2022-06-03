@@ -1,3 +1,6 @@
+<?php
+
+
 
 function addEmployee(array $newEmployee)
 {
@@ -8,6 +11,10 @@ function addEmployee(array $newEmployee)
 function deleteEmployee(string $id)
 {
 // TODO implement it
+// 1. Catch json form users.json and transform to a php object
+// 2. Iterate all this array using for each
+// 3. if ($id = object.id) -> delete all this object
+// 4. Transform to object json and save as users.json
 }
 
 
@@ -38,3 +45,11 @@ function getNextIdentifier(array $employeesCollection): int
 {
 // TODO implement it
 }
+
+// Our functions
+function displayAllEmployees(){
+    $json = file_get_contents("../../resources/employees.json");
+    print_r ($json);
+}
+
+?>

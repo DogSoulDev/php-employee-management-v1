@@ -1,5 +1,170 @@
+'user strict'
+
+const usersContainer =  document.getElementById('usersContainer');
+const userId = document.querySelectorAll("[data-userId]");
+console.log(userId);
+
+const employeeControlerUrl = '../src/library/employeeController.php';
+
+
+// * Without async / await
+window.addEventListener('load', ()=>{
+     fetch(employeeControlerUrl)
+    .then(response=> response.json())
+    .then (data=> {
+        console.log(data);        
+        data.forEach(user=>{
+            const tableRow = document.createElement('tr');
+            tableRow.innerHTML = `
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.age}</td>
+                <td>${user.streetAddress}</td>
+                <td>${user.city}</td>
+                <td>${user.state}</td>
+                <td>${user.postalCode}</td>
+                <td>${user.phoneNumber}</td>
+                <td>&nbsp;<a href="#" id="${user.id} data-userId="${user.id}"><i class="fas fa-trash-alt"></i></a></td>
+            <tr>        
+            `;
+            usersContainer.append(tableRow);            
+        });
+    });
+});
+
+
+
+// window.addEventListener('load', async()=>{
+//     //      fetch(employeeControlerUrl)
+//     const usersTable = await getAllUsers();
+
+// })
+
+// async function getAllUsers(){
+//     try{
+//         const response = await fetch(employeeControlerUrl)
+//         const data = await response.json()
+//         displayUsers()
+//         return data;
+//     } catch(error){
+//         console.error(error)
+//     }
+// }
+
+
+
+
+
+
+// *With async / await
+// window.addEventListener('load',getAllUsers());
+
+// async function getAllUsers(){    
+//         const response = await fetch(employeeControlerUrl)
+//         const data = await response.json()    
+//         return data;    
+//     } 
+// getAllUsers().then(data=>{
+//         console.log(data);        
+//         data.forEach(user=>{
+//             const tableRow = document.createElement('tr');
+//             tableRow.innerHTML = `
+//             <tr>
+//                 <td>${user.id}</td>
+//                 <td>${user.name}</td>
+//                 <td>${user.email}</td>
+//                 <td>${user.age}</td>
+//                 <td>${user.streetAddress}</td>
+//                 <td>${user.city}</td>
+//                 <td>${user.state}</td>
+//                 <td>${user.postalCode}</td>
+//                 <td>${user.phoneNumber}</td>
+//                 <td>&nbsp;<a href="#" id="${user.id}" data-userId="${user.id}"><i class="fas fa-trash-alt"></i></a></td>
+//             <tr>        
+//             `;
+//             usersContainer.append(tableRow);   
+//             ;
+         
+//         });
+//         // const userId = document.querySelectorAll("[data-userId]");
+//         // console.log(userId)
+
+
+
+//     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     await fetch(employeeControlerUrl)
+//     .then(response=> response.json())
+//     .then (data=> {
+//         console.log(data);        
+//         data.forEach(user=>{
+//             const tableRow = document.createElement('tr');
+//             tableRow.innerHTML = `
+//             <tr>
+//                 <td>${user.id}</td>
+//                 <td>${user.name}</td>
+//                 <td>${user.email}</td>
+//                 <td>${user.age}</td>
+//                 <td>${user.streetAddress}</td>
+//                 <td>${user.city}</td>
+//                 <td>${user.state}</td>
+//                 <td>${user.postalCode}</td>
+//                 <td>${user.phoneNumber}</td>
+//                 <td>&nbsp;<a href="#" id="${user.id} data-userId="${user.id}"><i class="fas fa-trash-alt"></i></a></td>
+//             <tr>        
+//             `;
+//             usersContainer.append(tableRow);
+            
+//         });
+// });
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //VOLHA EXAMPLE
+
+
+
 
 
 /* onload = () => {
