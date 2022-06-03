@@ -1,21 +1,3 @@
-<?php
-/**
- * EMPLOYEE FUNCTIONS LIBRARY
- *
- * @author: Jose Manuel Orts
- * @date: 11/06/2020
- */
-
-//VOLHA EXAMPLE
-/* function getAllData(){
-    $employees = file_get_contents ("../../resources/employees.json");
-    return $employees;
-} */
-
-
-
-
-
 
 function addEmployee(array $newEmployee)
 {
