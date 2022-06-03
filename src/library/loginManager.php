@@ -1,25 +1,36 @@
-<<<<<<< HEAD
-;;
-=======
 <?php
-    $usersJson = file_get_contents(__DIR__."/../../resources/users.json");
-    $usersArray = json_decode($usersJson, true);
+session_start();
 
-    foreach ($usersArray['users'] as $user) {
-        $isValidUser = $user['email'] === $_POST['email'];
-        $isPasswordChecked = password_verify($_POST['password'], $user['password']);
-
-        if ($isValidUser && $isPasswordChecked) {
-
-            setcookie("userId", $user["userId"], time() + 84600, '/');
-            header("Location: http://localhost:8000/src/dashboard.php", true, 302);
-
-            exit();
-        }
-    }
+function authUser(){
+    // Start session
+    // session_start();
     
-    header("Location: http://localhost:8000/assets/html/unauthorized.html", true, 302);
+    // get $_POST variablesfrom the form
+        $email = $_POST['email'];
+        $password = $_POST['password'];     
+    
+        // Validate if user is in our fake data base and redirect the user
+        if (checkUser($email, $password)){
+            $_SESSION['email'] = $email;   
+            header("Location:../dashboard.php");
+        }else{
+            $_SESSION['loginError'] = "Wrong email or password";
+            header("Location:../dashboard.php");        
+        }
+    };
+    
+    // Validate user in our fake data base and redirect
+    function checkUser($email, $password){    
+        // "Fake" Data Base
+        $emailDb = "admin@assemblerschool.com";
+        $passwordDb = "123456";    
+    
+        // Encrypt the password (in a database passwords always encripted)
+        $passwordEnc = password_hash($passwordDb, PASSWORD_DEFAULT);
+    
+        if ($email === $emailDb && password_verify($password, $passwordEnc)) return true;
+        else return false;
+    };
 
-    exit();
+    
 ?>
->>>>>>> b681449a0dfb6c690cf7073d6b44c50e2597956e
