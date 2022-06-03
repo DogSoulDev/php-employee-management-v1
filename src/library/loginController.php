@@ -1,5 +1,6 @@
 <?php
 
+require_once("./loginManager.php");
 
 echo $_POST['email'];
 echo $_POST['pass'];
