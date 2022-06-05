@@ -49,6 +49,17 @@ form {
   text-shadow: 1px 1px 1px #fff;
   font-family: 'Times New Roman', Times, serif;
 }
+.login-btn{
+  background: #983F40;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 100%;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 button {
   

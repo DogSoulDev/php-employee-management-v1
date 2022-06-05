@@ -30,6 +30,7 @@
             <img class="onepunch" src="./assets/img/v_50.png">
             <form>
                 <p class="log-in">Employee Management</p>
+                <form action="./src/dashboard.php" method="POST">
                 <div class="input-container">
                     <input type="text" placeholder="Username">
                 </div>
@@ -38,10 +39,10 @@
                 </div>
                 <div class="input-container-flex">
                     <p class="remember-label">Remember me</p>
-                    <input type="button" value=&#10004 class="check-box is-not-checked">
+                    <input type="checkbox" type="radio" value=&#10004 class="check-box is-not-checked">
                 </div>
                 <div class="input-container">
-                    <button class="login-btn" onclick="this.blur()">Log in</button>
+                    <button class="login-btn" >Log in</button>
                 </div>
             </form>
         </div>
