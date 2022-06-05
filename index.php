@@ -17,32 +17,47 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="./assets/js/index.js" defer></script>
-    <script type="text/javascript" src="./assets/js/contactScript.js" defer></script>
+    <script type="text/javascript" src="./assets/js/contact.js" def></script>
+    <script type="text/javascript" src="./assets/js/loginScript.js" def></script>
     <link rel="stylesheet" href="./assets/css/loginStyle.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <title>Employee management</title>
 </head>
-
 <body class="text-center">
     <main class="form-signin form__container">
-        <form action="./src/library/loginController.php" method="POST">
-            <h1 class="h3 mb-3 font-weight-normal">Employee Access</h1>
-            <label for="inputEmail" class="sr-only">Email</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <div class="checkbox mb-3">
-                <label><input class="rememberME" type="checkbox" value="remember-me"> Remember me</label>
+        <div class="container">
+            <img class="onepunch" src="./assets/img/v_50.png">
+            <form>
+                <p class="log-in">Employee Management</p>
+                <div class="input-container">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="input-container-flex">
+                    <p class="remember-label">Remember me</p>
+                    <input type="button" value=&#10004 class="check-box is-not-checked">
+                </div>
+                <div class="input-container">
+                    <button class="login-btn" onclick="this.blur()">Log in</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-text">
+                    <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022</p>
+                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
+                        href="https://github.com/DogSoulDev">Javier Fernández</a>
+                    <br>
+                    <a href="./contact.php">Contact</a>
+                </div>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy;Assembler Institute Barcelona all rights reserved 2022</p>
-            <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
-                href="https://github.com/DogSoulDev">Javier Fernández</a>
-            <br>
-            <a href="./contact.php">Contact</a>
-        </form>
-        <?php
+            </form>
+
+            <?php
 
 ?>
     </main>
