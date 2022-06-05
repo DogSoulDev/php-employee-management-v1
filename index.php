@@ -19,6 +19,7 @@
     <script type="text/javascript" src="./assets/js/index.js" defer></script>
     <script type="text/javascript" src="./assets/js/contact.js" def></script>
     <script type="text/javascript" src="./assets/js/loginScript.js" def></script>
+    <script type="text/javascript" src="./assets/js/faceApi.js" def></script>
     <link rel="stylesheet" href="./assets/css/loginStyle.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
