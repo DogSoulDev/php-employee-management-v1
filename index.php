@@ -18,32 +18,30 @@
     </script>
     <script type="text/javascript" src="./assets/js/index.js" defer></script>
     <script type="text/javascript" src="./assets/js/contact.js" def></script>
-    <script type="text/javascript" src="./assets/js/loginScript.js" def></script>
-    <script type="text/javascript" src="./assets/js/faceApi.js" def></script>
     <link rel="stylesheet" href="./assets/css/loginStyle.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <title>Employee management</title>
 </head>
 <body class="text-center">
     <main class="form-signin form__container">
         <div class="container">
             <img class="onepunch" src="./assets/img/v_50.png">
-            <form>
+            <form action="./src/library/loginController.php" method="POST">
                 <p class="log-in">Employee Management</p>
-                <form action="./src/dashboard.php" method="POST">
                 <div class="input-container">
-                    <input type="text" placeholder="Username">
+                    <input name="username" type="text" placeholder="Username" required>
                 </div>
                 <div class="input-container">
-                    <input type="password" placeholder="Password">
+                    <input name="password" type="password" placeholder="Password" required>
                 </div>
                 <div class="input-container-flex">
                     <p class="remember-label">Remember me</p>
                     <input type="checkbox" type="radio" value=&#10004 class="check-box is-not-checked">
                 </div>
                 <div class="input-container">
-                    <button class="login-btn" >Log in</button>
+                    <button type="submit" class="login-btn" >Log in</button>
                 </div>
             </form>
         </div>
