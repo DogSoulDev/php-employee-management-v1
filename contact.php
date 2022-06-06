@@ -48,8 +48,12 @@ session_start();
             <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
             <button class="sendBtn" type="submit" id="submit" name="submit">Send</button>
             <!--</a>-->
-
         </form>
+        <div class="footer-text">
+                    <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
+                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
+                        href="https://github.com/DogSoulDev">Javier Fernández</a>
+                </div>
         <div id="error"></div>
         <div id="success-msg"></div>
     </div>

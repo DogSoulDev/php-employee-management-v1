@@ -34,10 +34,12 @@
             <p><a href="../../index.php">I already have an account.</a></p>
         </form>
         </section>
+                <div class="footer-text">
+                    <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
+                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <br><a
+                        href="https://github.com/DogSoulDev">Javier Fernández</a>
+                </div>
     </main>
-
-    <?php echo file_get_contents('../../assets/html/footer.html'); ?>
-
     <script src="/assets/js/index.js"></script>
 </body>
 

@@ -144,14 +144,3 @@ input[type="button"]:hover {
   transition: 0.3s all;
 }
 
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 60%;
-  text-shadow: 1px 1px 1px #fff;
-  color: #6d6d6d;
-  letter-spacing: 0.5px;
-  padding-bottom: 2%;
-}

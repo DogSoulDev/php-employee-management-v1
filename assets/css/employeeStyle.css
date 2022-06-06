@@ -131,3 +131,9 @@ input[type="button"]:hover {
   font-size: 200%;
   transition: 0.3s all;
 }
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
