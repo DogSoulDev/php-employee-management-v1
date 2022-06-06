@@ -30,11 +30,14 @@ function getEmployee(string $id)
     $json = file_get_contents("../../resources/employees.json");
     $user_array = json_decode($json, true);
 
+    $employeeData = '';
     foreach($user_array as $user) {
         if($user['id'] == $id) {
-            print_r ($user);
+            // print_r ($user);
+            $employeeData = $user;
         }
     }
+    return $employeeData;
 }
 
 // getEmployee(2);
