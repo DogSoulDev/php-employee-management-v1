@@ -55,7 +55,7 @@ checkUrl($_GET);
                     <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
                         href="https://github.com/DogSoulDev">Javier Fernández</a>
                     <br>
-                    <a href="./contact.php">Contact</a>
+                    <a class="lastContact"  href="./contact.php">Contact</a>
                 </div>
             </div>
             </form>
