@@ -30,8 +30,8 @@ checkUrl($_GET);
         <div class="container">
             <img class="onepunch" src="./assets/img/v_50.png">
             <section>
-                <p class="log-in">Employee Management</p>
                 <form action="./src/library/loginController.php" method="POST">
+                <p class="log-in">Employee Management</p>
                     <div class="input-container">
                         <input name="username" type="text" placeholder="Username" required>
                     </div>
