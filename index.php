@@ -29,7 +29,7 @@ checkUrl($_GET);
     <main class="form-signin form__container">
         <div class="container">
             <img class="onepunch" src="./assets/img/v_50.png">
-            <form>
+            <section>
                 <p class="log-in">Employee Management</p>
                 <form action="./src/library/loginController.php" method="POST">
                     <div class="input-container">
@@ -46,7 +46,7 @@ checkUrl($_GET);
                         <button type="submit" class="login-btn">Log in</button>
                     </div>
                 </form>
-</form>
+</section>
         </div>
         <div class="footer">
             <div class="footer-container">
