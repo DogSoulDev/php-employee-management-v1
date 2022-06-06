@@ -6,6 +6,8 @@ console.log(userId);
 
 const employeeControlerUrl = '../src/library/employeeController.php';
 
+const employeeControllerUrlGet = '../src/library/employeeController.php?id='
+
 
 // * Without async / await
 window.addEventListener('load', ()=>{
@@ -31,88 +33,29 @@ window.addEventListener('load', ()=>{
             `;
             usersContainer.append(tableRow);            
         });
+        
     });
 });
-
-
-
-// window.addEventListener('load', async()=>{
-//     //      fetch(employeeControlerUrl)
-//     const usersTable = await getAllUsers();
-
-// })
-
-// async function getAllUsers(){
-//     try{
-//         const response = await fetch(employeeControlerUrl)
-//         const data = await response.json()
-//         displayUsers()
-//         return data;
-//     } catch(error){
-//         console.error(error)
-//     }
-// }
-
 
 
 
 
 
 // *With async / await
-// window.addEventListener('load',getAllUsers());
+// window.addEventListener('load',async()=>{
+//     await getEmployees();
+// });
 
-// async function getAllUsers(){    
-//         const response = await fetch(employeeControlerUrl)
-//         const data = await response.json()    
-//         return data;    
-//     } 
-// getAllUsers().then(data=>{
-//         console.log(data);        
-//         data.forEach(user=>{
-//             const tableRow = document.createElement('tr');
-//             tableRow.innerHTML = `
-//             <tr>
-//                 <td>${user.id}</td>
-//                 <td>${user.name}</td>
-//                 <td>${user.email}</td>
-//                 <td>${user.age}</td>
-//                 <td>${user.streetAddress}</td>
-//                 <td>${user.city}</td>
-//                 <td>${user.state}</td>
-//                 <td>${user.postalCode}</td>
-//                 <td>${user.phoneNumber}</td>
-//                 <td>&nbsp;<a href="#" id="${user.id}" data-userId="${user.id}"><i class="fas fa-trash-alt"></i></a></td>
-//             <tr>        
-//             `;
-//             usersContainer.append(tableRow);   
-//             ;
-         
-//         });
-//         // const userId = document.querySelectorAll("[data-userId]");
-//         // console.log(userId)
-
-
-
-//     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     await fetch(employeeControlerUrl)
-//     .then(response=> response.json())
-//     .then (data=> {
-//         console.log(data);        
-//         data.forEach(user=>{
+// async function getEmployees (){
+//     const res = await fetch(employeeControlerUrl, {
+//         method: 'GET',
+//         headers: {
+//             "content-type": "application/json",
+//         } 
+//     })
+//     const data = await res.json();
+//     console.log(data);
+//     data.forEach(user=>{
 //             const tableRow = document.createElement('tr');
 //             tableRow.innerHTML = `
 //             <tr>
@@ -128,22 +71,35 @@ window.addEventListener('load', ()=>{
 //                 <td>&nbsp;<a href="#" id="${user.id} data-userId="${user.id}"><i class="fas fa-trash-alt"></i></a></td>
 //             <tr>        
 //             `;
-//             usersContainer.append(tableRow);
+//             usersContainer.append(tableRow);   
+            
             
 //         });
-// });
-// };
+// }
+
+// const userId = document.querySelectorAll("[data-userId]");
+// console.log(userId);
+
+// console.log(`${employeeControllerUrlGet}${6}`);
+// otuput -> ../src/library/employeeController.php?id=6
 
 
 
 
+async function getEmployeeId (id){
+    const response = await fetch(`${employeeControllerUrlGet}${id}`, {
+        method: 'GET',
+        headers: {
+            "content-type": "application/json",
+        }
+    });
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
 
 
-
-
-
-
-
+// getEmployeeId (4);
 
 
 

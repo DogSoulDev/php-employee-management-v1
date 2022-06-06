@@ -27,7 +27,18 @@ function updateEmployee(array $updateEmployee)
 function getEmployee(string $id)
 {
 // TODO implement it
+    $json = file_get_contents("../../resources/employees.json");
+    $user_array = json_decode($json, true);
+
+    foreach($user_array as $user) {
+        if($user['id'] == $id) {
+            print_r ($user);
+        }
+    }
 }
+
+// getEmployee(2);
+
 
 
 function removeAvatar($id)
