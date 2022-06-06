@@ -15,6 +15,7 @@ session_start();
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="./assets/js/index.js" defer></script>
+    
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
@@ -34,7 +35,7 @@ session_start();
             </label>
         </div>
 
-        <h1>Contact us</h1>
+        <h1 class="contact-title">Contact us</h1>
         <p>If you have questions or any problems with our program, please contact us, we will attend to you as soon as
             possible. Dev Team .</p>
 
