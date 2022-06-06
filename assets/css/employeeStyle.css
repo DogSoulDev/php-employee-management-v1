@@ -4,22 +4,15 @@
   box-sizing: border-box;
 }
 
-.onepunch{
-  border-radius: 50%;
-  -webkit-box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
-  -moz-box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
-  box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
-}
-
 .container {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'arial';
-  font-size: 20px;
-  font-weight: 300;
+  font-family: "arial";
+  font-size: 10px;
+  font-weight: 200;
 }
 
 form {
@@ -28,15 +21,13 @@ form {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  background: #FFFFFF;
+  background: #ffffff;
   position: relative;
-  box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
+  box-shadow: -12px 2px 31px -7px rgba(151, 62, 63, 1);
 }
 
 .input-container-flex {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: center;
   gap: 15px;
   padding-left: 20px;
@@ -48,16 +39,16 @@ form {
   letter-spacing: 0.5px;
 }
 
-.log-in{
+.register-in {
   text-align: center;
   font-weight: 900;
-  color: #983F40;
+  color: #983f40;
   font-size: 170%;
   text-shadow: 1px 1px 1px #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-.login-btn{
-  background: #983F40;
+.register-btn {
+  background: #983f40;
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -65,11 +56,9 @@ form {
   font-size: 100%;
   font-weight: 900;
   text-shadow: 1px 1px 1px #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
 button {
-  
   width: 100%;
   height: 45px;
   border-radius: 30px;
@@ -77,22 +66,21 @@ button {
   box-shadow: 0px 5px 8px #b5b5b5, 0px -5px 8px #fff;
   font-weight: 900;
   font-size: 85%;
-  color: #BBB50B;
+  color: #bbb50b;
   text-shadow: 1px 1px 1px #fff;
   cursor: pointer;
-  background: #4C436C;
+  background: #4c436c;
   transition: 0.3s;
 }
 
 button:hover {
-  box-shadow: 0px 3px 3px #b5b5b5, 0px -3px 3px #fff;;
+  box-shadow: 0px 3px 3px #b5b5b5, 0px -3px 3px #fff;
 }
 
 button:focus {
   box-shadow: inset 2px 2px 2px #a5a5a5, inset -2px -2px 2px #fff;
 }
-
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 300px;
   border-radius: 30px;
@@ -104,13 +92,13 @@ input[type="password"] {
   position: relative;
   z-index: 1;
   transition: 0.3s all;
-  font-size: 75%;
-  text-shadow: 1px 1px 1px #CDB2A1;
+  font-size: 70%;
+  text-shadow: 1px 1px 1px #cdb2a1;
   color: #6d6d6d;
   letter-spacing: 0.5px;
 }
 
-input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
   box-shadow: inset 2px 2px 2px #a5a5a5, inset -2px -2px 2px #fff;
 }
@@ -137,21 +125,9 @@ input[type="button"]:hover {
 }
 
 ::placeholder {
+    color: rgb(10, 9, 9);
   text-shadow: 1px 1px 1px #fff;
-  color: #6d6d6d;
   letter-spacing: 0.5px;
-  font-size: 100%;
+  font-size: 200%;
   transition: 0.3s all;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 60%;
-  text-shadow: 1px 1px 1px #fff;
-  color: #6d6d6d;
-  letter-spacing: 0.5px;
-  padding-bottom: 2%;
 }

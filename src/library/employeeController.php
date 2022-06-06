@@ -1,6 +1,7 @@
 <?php 
 
-require ('employeeManager.php');
+require ('./employeeManager.php');
+require '../library/registerEmployee.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 

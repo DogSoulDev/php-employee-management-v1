@@ -39,13 +39,13 @@ checkUrl($_GET);
                         <input name="password" type="password" placeholder="Password" required>
                     </div>
                     <div class="input-container">
-                    <p> Create new account. <a href="./src/library/registerEmployee.php">Employee Account</a></p>
+                        <p> Create new account. <a href="./src/library/registerEmployee.php">Employee Account</a></p>
                     </div>
                     <div class="input-container">
                         <button type="submit" class="login-btn">Log in</button>
                     </div>
                 </form>
-</section>
+            </section>
         </div>
         <div class="footer">
             <div class="footer-container">
@@ -54,7 +54,7 @@ checkUrl($_GET);
                     <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
                         href="https://github.com/DogSoulDev">Javier Fernández</a>
                     <br>
-                    <a class="lastContact"  href="./contact.php">Contact</a>
+                    <a class="lastContact" href="./contact.php">Contact</a>
                 </div>
             </div>
             </form>

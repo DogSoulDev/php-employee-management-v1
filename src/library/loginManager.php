@@ -19,7 +19,7 @@ if ($username === $userDataName && password_verify($password, $userDataPassword)
 
 function checkUrl ($get){
     if(isset($get['error'])){
-        echo "<script>alert('Error 404');</script>";
+        echo "<script>alert('Please try again later ');</script>";
     }
 }
 
