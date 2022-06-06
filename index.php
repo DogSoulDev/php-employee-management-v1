@@ -38,9 +38,8 @@ checkUrl($_GET);
                     <div class="input-container">
                         <input name="password" type="password" placeholder="Password" required>
                     </div>
-                    <div class="input-container-flex">
-                        <p class="remember-label">Remember me</p>
-                        <input type="checkbox" type="radio" value=&#10004 class="check-box is-not-checked">
+                    <div class="input-container">
+                    <p> Create new account. <a href="./src/library/registerEmployee.php">Employee Account</a></p>
                     </div>
                     <div class="input-container">
                         <button type="submit" class="login-btn">Log in</button>
