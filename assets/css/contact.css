@@ -14,6 +14,7 @@
 
 .contact-container {
   display: flex;
+  background-color: #38C0BE;
   width: 100vw;
   height: 100vh;
 }
