@@ -1,6 +1,3 @@
-<?php 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +11,30 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="./assets/js/index.js" defer></script>
-    <script type="text/javascript" src="./assets/js/contactScript.js" def></script>
-    <link rel="stylesheet" href="./assets/css/loginStyle.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="../assets/js/index.js" defer></script>
 
     <title>Dashboard</title>
 </head>
 
 <body>
-<?php
-        require("./dashboardHeader.php");
-    ?>
+<nav class="navbar navbar-expand bg-light navbar__container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+        <a class="nav-link" href="#">Employees</a>
+        <button type="button" class="btn btn-primary btn-sm navbar__logout-btn" onclick="alert('jello')">LogOut</button>
+        
+      </div>
+    </div>
+  </div>
+</nav>
 
 <main>
     <table class="main__table">
