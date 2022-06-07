@@ -50,15 +50,13 @@ function removeAvatar($id)
 }
 
 
-function getQueryStringParameters(): array
-{
-// TODO implement it
-}
+// function getQueryStringParameters():{
+// // TODO implement it
+// }
 
-function getNextIdentifier(array $employeesCollection): int
-{
-// TODO implement it
-}
+// function getNextIdentifier(array $employeesCollection):{
+// // TODO implement it
+// }
 
 // Our functions
 function displayAllEmployees(){
