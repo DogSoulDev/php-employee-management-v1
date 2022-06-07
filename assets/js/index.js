@@ -10,8 +10,8 @@ window.addEventListener('load', ()=>{
      fetch(employeeControlerUrl)
     .then(response=> response.json())
     .then (data=> {
-        // console.log(data);        
-        updateTable(data);        
+        console.log(typeof data);        
+        // updateTable(data);        
         addEventListenerToDeleteBtn();  
     });
 });
@@ -23,28 +23,28 @@ const deleteChildNodes = (parent) => {
   };
   
 
-function updateTable(data) {
-    deleteChildNodes(usersContainer);
-    data.forEach(user=>{
-        const tableRow = document.createElement('tr');
-        tableRow.innerHTML = `
-        <tr>
-            <td>${user.id}</td>
-            <td>${user.name}</td>
-            <td>${user.email}</td>
-            <td>${user.age}</td>
-            <td>${user.streetAddress}</td>
-            <td>${user.city}</td>
-            <td>${user.state}</td>
-            <td>${user.postalCode}</td>
-            <td>${user.phoneNumber}</td>
-            <td>&nbsp;<a href="#" class='user-data' id="${user.id}" data-user="${user.id}" ><i class="fas fa-trash-alt" ></i></a></td>
-        <tr>        
-        `;
-        usersContainer.append(tableRow);   
+// function updateTable(data) {
+//     deleteChildNodes(usersContainer);
+//     data.forEach(user=>{
+//         const tableRow = document.createElement('tr');
+//         tableRow.innerHTML = `
+//         <tr>
+//             <td>${user.id}</td>
+//             <td>${user.name}</td>
+//             <td>${user.email}</td>
+//             <td>${user.age}</td>
+//             <td>${user.streetAddress}</td>
+//             <td>${user.city}</td>
+//             <td>${user.state}</td>
+//             <td>${user.postalCode}</td>
+//             <td>${user.phoneNumber}</td>
+//             <td>&nbsp;<a href="#" class='user-data' id="${user.id}" data-user="${user.id}" ><i class="fas fa-trash-alt" ></i></a></td>
+//         <tr>        
+//         `;
+//         usersContainer.append(tableRow);   
                
-    });
-}
+//     });
+// }
 
 
 function addEventListenerToDeleteBtn(){
@@ -61,17 +61,19 @@ function addEventListenerToDeleteBtn(){
 }
 
 
-async function deleteEmployee(id){
-    const response =  await fetch(`${employeeControllerUrlGet}${id}`, {
-        method: 'DELETE',
-        headers: {
-            "content-type": "application/json",
-        }
-    });
-    const data = await response.json();
-    // console.log(data);
-    updateTable(data);
-}
+// async function deleteEmployee(id){
+//     const response =  await fetch(`${employeeControllerUrlGet}${id}`, {
+//         method: 'DELETE',
+//         headers: {
+//             "content-type": "application/json",
+//         }
+//     });
+//     const data = await response.json();
+//     console.log(data);
+//     // updateTable(data);
+// }
+
+// deleteEmployee(1);
 
 
 
