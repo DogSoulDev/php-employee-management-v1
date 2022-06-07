@@ -33,8 +33,7 @@ checkUrl($_GET);
                 <form action="./src/library/loginController.php" method="POST">
                 <p class="log-in">Employee Management</p>
                     <div class="input-container">
-                        <input name="username" type="text" placeholder="Username" required>
-                    </div>
+                        <input name="username" type="text" placeholder="Username" maxlength="10" required></div>
                     <div class="input-container">
                         <input name="password" type="password" placeholder="Password" required>
                     </div>
