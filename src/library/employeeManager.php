@@ -27,6 +27,7 @@ function deleteEmployee(string $id)
     return $json_string_modified;
 }
 
+
 // deleteEmployee(8);
 
 
@@ -74,7 +75,9 @@ function getNextIdentifier(array $employeesCollection): int
 // Our functions
 function displayAllEmployees(){
     $json = file_get_contents("../../resources/employees.json");
+    echo "<pre>";
     print_r ($json);
 }
 
+ displayAllEmployees();
 ?>
