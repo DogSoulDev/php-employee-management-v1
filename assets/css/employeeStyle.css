@@ -5,12 +5,14 @@
 }
 
 .container {
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "arial";
-  font-size: 10px;
-  font-weight: 200;
+  font-family: 'arial';
+  font-size: 20px;
+  font-weight: 300;
 }
 .employeeForm {
   text-align: center;
@@ -20,12 +22,25 @@
   text-shadow: 1px 1px 1px #fff;
   font-family: 'Times New Roman', Times, serif;
 }
+.footer-text{
+  text-align: center;
+  font-weight: 500;
+  color: #983F40;
+  font-size: 70%;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 form {
   padding: 20px;
   border-radius: 10%;
-  background: #ffffff;
-  box-shadow: -12px 2px 31px -7px rgba(151, 62, 63, 1);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background: #FFFFFF;
+  position: relative;
+  box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
 }
 
 button {
@@ -52,10 +67,20 @@ button:focus {
 }
 
 
+
+
 .is-checked {
   color: #555;
 }
 
 .is-not-checked {
   color: transparent;
+}
+
+::placeholder {
+  text-shadow: 1px 1px 1px #fff;
+  color: #6d6d6d;
+  letter-spacing: 0.5px;
+  font-size: 100%;
+  transition: 0.3s all;
 }

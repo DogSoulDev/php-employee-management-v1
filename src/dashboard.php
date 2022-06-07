@@ -52,7 +52,7 @@
 
             <div class="navbar">
                 <a class="navlinks" aria-current="page"
-                    href="http://127.0.0.1/php-employee-management-v1/src/dashboard.php">Dashboard</a>
+                    href="http://127.0.0.1/php-employee-management-v1/src/dashboard.php" >Dashboard</a>
                 <a class="navlinks"
                     href="http://127.0.0.1/php-employee-management-v1/src/employee.php">Employees</a>
                 <button type="button" class="navlinks" id="logoutBtn">LogOut</button>
@@ -73,15 +73,15 @@
         <table class="main__table">
             <thead>
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Street</th>
-                    <th scope="col">City</th>
-                    <th scope="col">State</th>
-                    <th scope="col">Postal Code</th>
-                    <th scope="col">Phone Number</th>
+                    <th type="text" scope="col">Id</th>
+                    <th type="text" scope="col">Name</th>
+                    <th type="text" scope="col">Email</th>
+                    <th type="text" scope="col">Age</th>
+                    <th type="text" scope="col">Street</th>
+                    <th type="text" scope="col">City</th>
+                    <th type="text" scope="col">State</th>
+                    <th type="text" scope="col">Postal Code</th>
+                    <th type="text" scope="col">Phone Number</th>
                 </tr>
             </thead>
             <tbody id="usersContainer"></tbody>

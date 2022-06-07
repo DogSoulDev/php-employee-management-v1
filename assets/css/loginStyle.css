@@ -21,6 +21,13 @@
   font-size: 20px;
   font-weight: 300;
 }
+.footer-text{
+  font-weight: 500;
+  color: #983F40;
+  font-size: 70%;
+  text-shadow: 1px 1px 1px #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 form {
   padding: 20px;
@@ -77,7 +84,7 @@ button {
   box-shadow: 0px 5px 8px #b5b5b5, 0px -5px 8px #fff;
   font-weight: 900;
   font-size: 85%;
-  color: #BBB50B;
+  color: #ffffff;
   text-shadow: 1px 1px 1px #fff;
   cursor: pointer;
   background: #4C436C;

@@ -50,11 +50,11 @@ checkUrl($_GET);
                     <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
                     <a href="https://github.com/jose-cuevas">Jose Cuevas</a>  &amp; 
                     <a href="https://github.com/DogSoulDev">Javier Fernández</a>
+                    <div>
+                    <a href="./contact.php">Contact</a>
+                    </div>
                 </div>
-                <div>
-                        <a href="./contact.php">Contact</a>
-                        </div>
-                <div>
+
             </form>
 
             <?php

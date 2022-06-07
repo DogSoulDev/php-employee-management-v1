@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/contact.css">
     <link rel="stylesheet" href="../../assets/css/employeeStyle.css">
-    <title>Register Employee</title>
+    <title>Register Account</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <section class="container">
         <img class="onepunch" src="../../assets/img/c.png">
         <form action="./loginController.php" method="POST">
-        <p class="register-in">Register new employee</p>
+        <p class="register-in">Register  Employee Account</p>
             <div class="input-container">
                 <input type="email" id="email" name="email" placeholder="Email"
                     pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" maxlength="100" required>
@@ -35,7 +35,7 @@
         </section>
                 <div class="footer-text">
                     <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
-                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <br><a
+                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp;<a
                         href="https://github.com/DogSoulDev">Javier Fernández</a>
                 </div>
     </main>
