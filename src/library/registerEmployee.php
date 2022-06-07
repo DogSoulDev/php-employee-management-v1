@@ -1,4 +1,3 @@
-<!-- TODO Application entry point. Login view -->
 <!DOCTYPE html>
 <html lang="en">
 
