@@ -49,8 +49,8 @@
                         <input type="text" class="form-control" id="city" name="city" placeholder="Enter address"  required>
                     </div>
                     <div class="form-group">
-                        <label for="streetAddress">Street Address</label>
-                        <input type="text" class="form-control" id="streetAddres" name="streetAddres" placeholder="Enter street address"  required>
+                        <label for="street">Street Address</label>
+                        <input type="text" class="form-control" id="street" name="street" placeholder="Enter street address"  required>
                     </div>
                     <div class="form-group">
                         <label for="state">State</label>

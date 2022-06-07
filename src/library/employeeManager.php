@@ -8,22 +8,23 @@ function addEmployee(array $newEmployee)
     $json = file_get_contents("../../resources/employees.json");    
     $users_array = json_decode($json, true);
 
-    echo "<pre>";
     
-
-    $lastArrayKey = array_key_last($users_array);   
-    $nextArrayId = $lastArrayKey + 2;
-    // print_r($nextArrayId);
-
-    $newEmployee['id'] = $nextArrayId;
-    print_r($newEmployee);
     array_push($users_array, $newEmployee);
     print_r($users_array);
+
+    $json_string_modified = json_encode($users_array); 
+    file_put_contents("../../resources/employees.json", $json_string_modified);
+
+    
+    
+    return $json_string_modified;
+    
 
 }
 
 // $newUser = array (
-//     "name" > "Jose",
+//     "id" => getNextIdentifier(),
+//     "name" => "Jose",
 //     "lastName"=> "Cuevas",
 //     "email"=> "cuevas@network.com",
 //     "gender"=> "man",
@@ -39,9 +40,7 @@ function addEmployee(array $newEmployee)
 
 
 function deleteEmployee(string $id)
-{
-      
-    
+{    
     $json = file_get_contents("../../resources/employees.json");    
     $users_array = json_decode($json, true);  
 
@@ -98,10 +97,14 @@ function getQueryStringParameters(){
 // TODO implement it
 }
 
-function getNextIdentifier(array $employeesCollection){
-// TODO implement it
+function getNextIdentifier(){
     $json = file_get_contents("../../resources/employees.json");    
     $users_array = json_decode($json, true);  
+
+    $lastArrayKey = array_key_last($users_array);   
+    $nextId = $lastArrayKey + 2;
+    // print_r($nextId);
+    return $nextId;
 }
 
 // Our functions
