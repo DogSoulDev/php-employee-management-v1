@@ -27,9 +27,17 @@
     </button> -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-        <a class="nav-link" href="#">Employees</a>
-        <button type="button" class="btn btn-primary btn-sm navbar__logout-btn" onclick="alert('jello')">LogOut</button>
+        <a class="nav-link active" aria-current="page" href="http://127.0.0.1/php-employee-management-v1/src/dashboard.php">Dashboard</a>
+        <a class="nav-link" href="http://127.0.0.1/php-employee-management-v1/src/employee.php">Employees</a>
+        <button type="button" class="btn btn-primary btn-sm navbar__logout-btn" id="logoutBtn">LogOut</button>
+      </div>
+      <!-- Just one redirection: -->
+        <script type="text/javascript">
+    document.getElementById("logoutBtn").onclick = function () {
+        location.href = "http://127.0.0.1/php-employee-management-v1/index.php";
+    };
+    
+</script>
         
       </div>
     </div>
