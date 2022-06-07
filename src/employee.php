@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/employeeStyle.css">
     <title>Employee Form</title>
 
 </head>
@@ -18,8 +19,11 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="neworker">
+            <img src="../assets/img/worker.gif" alt="">
+            </div>
             <div class="col-md-12">
-                <h1>Employee Form</h1>
+                <h1 class="employeeForm">Employee Form</h1>
             </div>
         </div>
         <div class="row">
