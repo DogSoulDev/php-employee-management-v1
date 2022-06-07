@@ -26,7 +26,6 @@ function deleteEmployee(string $id)
             unset($users_array[$user]);
         }
     }
-     
     $json_string_modified = json_encode($users_array); 
     file_put_contents("../../resources/employees.json", $json_string_modified);
     
@@ -68,13 +67,13 @@ function removeAvatar($id)
 }
 
 
-// function getQueryStringParameters():{
-// // TODO implement it
-// }
+function getQueryStringParameters(){
+// TODO implement it
+}
 
-// function getNextIdentifier(array $employeesCollection):{
-// // TODO implement it
-// }
+function getNextIdentifier(array $employeesCollection){
+// TODO implement it
+}
 
 // Our functions
 function displayAllEmployees(){
