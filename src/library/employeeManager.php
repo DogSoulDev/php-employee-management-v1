@@ -5,30 +5,36 @@
 function addEmployee(array $newEmployee)
 {
 // TODO implement it
+
+
+
 }
 
 
 function deleteEmployee(string $id)
 {
-    // TODO implement it    
+      
     
     $json = file_get_contents("../../resources/employees.json");    
-    $users_array = json_decode($json, true);    
+    $users_array = json_decode($json, true);  
 
-    foreach ($users_array as $key=>$user){
-        if ($user['id'] == $id){
-            unset($users_array[$key]);
+    foreach ($users_array as $user => $data){
+        echo "<pre>";
+
+        // print_r ($users_array);        
+        if ($data['id'] == $id){
+            unset($users_array[$user]);
         }
     }
-    // 
+     
     $json_string_modified = json_encode($users_array); 
     file_put_contents("../../resources/employees.json", $json_string_modified);
     
-    return $json_string_modified;
+    print_r ($json_string_modified);
 }
 
 
-// deleteEmployee(8);
+// deleteEmployee(2);
 
 
 function updateEmployee(array $updateEmployee)
@@ -75,9 +81,7 @@ function getNextIdentifier(array $employeesCollection): int
 // Our functions
 function displayAllEmployees(){
     $json = file_get_contents("../../resources/employees.json");
-    echo "<pre>";
     print_r ($json);
 }
 
- displayAllEmployees();
 ?>

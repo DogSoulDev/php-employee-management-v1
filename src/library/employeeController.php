@@ -16,13 +16,12 @@ if ($method === 'GET' && $_SERVER['QUERY_STRING'] === 'all_data'){
    $object = json_encode($employeeId_array);  
    echo $object;
 }
-// else if($method === 'DELETE'){
-//    // echo "esto viene de controller {$_GET['id']}";   
-
-//    $employeeId_array = deleteEmployee($_GET['id']);
-//    $object = json_encode($employeeId_array);  
-//    echo $object;
-// }
+else if($method === 'DELETE'){
+   // echo "esto viene de controller {$_GET['id']}";
+   $employeeId_array = deleteEmployee($_GET['id']);
+   $object = json_encode($employeeId_array);  
+   echo $object;
+}
 
 
 
