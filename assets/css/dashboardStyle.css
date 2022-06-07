@@ -5,14 +5,14 @@
   }
 
   .container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'arial';
-    font-size: 20px;
-    font-weight: 300;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'arial';
+  font-size: 20px;
+  font-weight: 300;
   }
   .navbar {
     display: flex;
@@ -36,30 +36,27 @@
   }
 
   .employeeSelector{
-    width: 100px;
-    border-radius: 50px;
-    outline: none;
-    border: none;
-    background: transparent;
-    box-shadow: inset 2px 2px 5px #a5a5a5, inset -5px -5px 10px #fff;
     padding: 18px;
     position: relative;
     z-index: 1;
     transition: 0.3s all;
-    font-size: 80%;
+    font-size: 70%;
     text-shadow: 1px 1px 1px #cdb2a1;
-    color: #983F40;
+    color: #6d6d6d;
     letter-spacing: 0.5px;
+    color: #983F40;
   }
 
-  .images {
-      display:flex;
-      
 
-
-  }
-  .photo{
-      -webkit-box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
-      -moz-box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
-      box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
+  .main__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'arial';
+    font-size: 30px;
+    font-weight: 100;
+    word-spacing: 2em;
+    
   }
