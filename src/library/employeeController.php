@@ -21,6 +21,22 @@ else if($method === 'DELETE'){
    $employeeId_array = deleteEmployee($_GET['id']);
    $object = json_encode($employeeId_array);  
    echo $object;
+} else if ($method === 'POST'){
+   
+   $newUser = array (
+      // "id"=> 1,
+      "name"=> $_POST['name'],
+      "lastName"=> $_POST['lastName'],
+      "email"=> $_POST['email'],
+      "gender"=> $_POST['gender'],
+      "city"=> $_POST['city'],
+      "streetAddress"=> $_POST['streetAddress'],
+      "state"=> $_POST['state'],
+      "age"=> $_POST['age'],
+      "postalCode"=> $_POST['postalCode'],
+      "phoneNumber"=> $_POST['phoneNumber']
+   );  
+   
 }
 
 

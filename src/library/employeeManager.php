@@ -4,11 +4,38 @@
 
 function addEmployee(array $newEmployee)
 {
-// TODO implement it
+    // TODO implement it
+    $json = file_get_contents("../../resources/employees.json");    
+    $users_array = json_decode($json, true);
 
+    echo "<pre>";
+    
 
+    $lastArrayKey = array_key_last($users_array);   
+    $nextArrayId = $lastArrayKey + 2;
+    // print_r($nextArrayId);
+
+    $newEmployee['id'] = $nextArrayId;
+    print_r($newEmployee);
+    array_push($users_array, $newEmployee);
+    print_r($users_array);
 
 }
+
+// $newUser = array (
+//     "name" > "Jose",
+//     "lastName"=> "Cuevas",
+//     "email"=> "cuevas@network.com",
+//     "gender"=> "man",
+//     "city"=> "----",
+//     "streetAddress"=> "126111",
+//     "state"=> "AS",
+//     "age"=> "234",
+//     "postalCode"=> "11",
+//     "phoneNumber"=> "22312237"
+// );
+
+// addEmployee($newUser);
 
 
 function deleteEmployee(string $id)
@@ -73,6 +100,8 @@ function getQueryStringParameters(){
 
 function getNextIdentifier(array $employeesCollection){
 // TODO implement it
+    $json = file_get_contents("../../resources/employees.json");    
+    $users_array = json_decode($json, true);  
 }
 
 // Our functions
