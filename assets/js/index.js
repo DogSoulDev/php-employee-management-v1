@@ -46,16 +46,20 @@ function updateTable(data) {
     });
 }
 
+
 function addEventListenerToDeleteBtn(){
     const userId = document.querySelectorAll("[data-user]");
     userId.forEach(user=>{
         user.addEventListener('click', (e)=>{
-            const aElement = e.target.parentElement;
+            const aElement = e.target.parentElement; 
+            console.log(aElement);   
             const id = aElement.getAttribute('data-user');
+            console.log(id);
             deleteEmployee(id)
         })
     })
 }
+
 
 async function deleteEmployee(id){
     const response =  await fetch(`${employeeControllerUrlGet}${id}`, {
@@ -64,9 +68,9 @@ async function deleteEmployee(id){
             "content-type": "application/json",
         }
     });
-    const data = await response.text();
-    console.log(data);
-    // updateTable(data);
+    const data = await response.json();
+    // console.log(data);
+    updateTable(data);
 }
 
 
@@ -83,5 +87,4 @@ async function deleteEmployee(id){
     return data;
 }
 
-
-getEmployeeId (4);
+// getEmployeeId (4);
