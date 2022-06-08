@@ -16,9 +16,9 @@
 }
 .employeeForm {
   text-align: center;
-  font-weight: 900;
+  font-weight: 300;
   color: #983F40;
-  font-size: 170%;
+  font-size: 100%;
   text-shadow: 1px 1px 1px #fff;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -35,7 +35,6 @@
 form {
   padding: 20px;
   border-radius: 10%;
-  display: flex;
   gap: 20px;
   flex-direction: column;
   background: #FFFFFF;
