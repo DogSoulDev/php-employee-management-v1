@@ -23,7 +23,7 @@ session_start()
 </head>
 
 <body>
-          <nav class="navbar navbar-expand bg-light navbar__container">
+    <nav class="navbar navbar-expand bg-light navbar__container">
         <div class="container-fluid">
             <a href="../assets/img/b.png" class="employeeSelector">Don't Click</a>
             <div class="navbar">
@@ -49,7 +49,7 @@ session_start()
                     <th  scope="col">State</th>
                     <th  scope="col">Postal Code</th>
                     <th  scope="col">Phone Number</th>
-                    <th scope="col" >&nbsp;<i class="fas fa-plus"></i></th>  
+                    <th scope="col" id="addEmployee">&nbsp;<i class="fas fa-plus"></i></th>  
                 </tr>
             </thead>
             <tbody id="usersContainer"></tbody>
