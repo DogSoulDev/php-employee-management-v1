@@ -1,14 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-
-
-
-
-  .main__table {
-   display:block;
-   box-sizing: border-box;
-    
-  }
   .navbar {
     display: flex;
   }
@@ -41,4 +37,3 @@
     letter-spacing: 0.5px;
     color: #983F40;
   }
-
