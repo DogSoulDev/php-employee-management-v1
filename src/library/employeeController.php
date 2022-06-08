@@ -19,8 +19,8 @@ if ($method === 'GET' && $_SERVER['QUERY_STRING'] === 'all_data'){
 else if($method === 'DELETE'){
    // echo "esto viene de controller {$_GET['id']}";
    $employeeId_array = deleteEmployee($_GET['id']);
-   $object = json_encode($employeeId_array);  
-   echo $object;
+   // $object = json_encode($employeeId_array);  
+   echo $employeeId_array;
 
 } 
 
@@ -39,10 +39,9 @@ else if ($method === 'POST'){
       "phoneNumber"=> $_POST['phoneNumber']
    );    
 
-   addEmployee($newUser);
-   
+   addEmployee($newUser);   
    phpAlert("Employee Successfully Saved!");
-   // header('../dashboard.php');
+   header("Location:../dashboard.php");   
 }
 
 

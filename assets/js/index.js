@@ -26,7 +26,7 @@ const deleteChildNodes = (parent) => {
 
 function updateTable(data) {
     deleteChildNodes(usersContainer);
-    Object.values(data).forEach(user=>{
+    data.forEach(user=>{
         const tableRow = document.createElement('tr');
         tableRow.innerHTML = `
         <tr>        
@@ -43,6 +43,7 @@ function updateTable(data) {
         <tr>        
         `;
         usersContainer.append(tableRow);
+        
           
                
     });
@@ -72,6 +73,7 @@ async function deleteEmployee(id){
     });
     const data = await response.json();    
     updateTable(data);
+    addEventListenerToDeleteBtn();
     console.log(data);
 }
 

@@ -19,7 +19,7 @@ function addEmployee(array $newEmployee)
     
     return $json_string_modified;
 
-    header("Location:../dashboard.php");
+    
     
 
 }
@@ -50,7 +50,8 @@ function deleteEmployee(string $id)
 
         // print_r ($users_array);        
         if ($data['id'] == $id){
-            unset($users_array[$user]);
+            array_splice($users_array, $user, 1);
+            // unset($users_array[$user]);
         }
     }
     $json_string_modified = json_encode($users_array); 
