@@ -1,18 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  .container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'arial';
-  font-size: 20px;
-  font-weight: 300;
+
+
+
+
+
+  .main__table {
+   display:block;
+   box-sizing: border-box;
+    
   }
   .navbar {
     display: flex;
@@ -47,16 +42,3 @@
     color: #983F40;
   }
 
-
-  .main__table {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'arial';
-    font-size: 30px;
-    font-weight: 100;
-    word-spacing: 2em;
-    
-  }

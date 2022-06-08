@@ -3,7 +3,6 @@
 const usersContainer = document.getElementById("usersContainer");
 const employeeControlerUrl = "../src/library/employeeController.php?all_data";
 const employeeControllerUrlGet = "../src/library/employeeController.php?id=";
-// const addEmployee = document.getElementById("addEmployee");
 
 // * Without async / await
 window.addEventListener("load", () => {
@@ -84,16 +83,9 @@ async function getEmployeeId(id) {
 
 
 
-// async function addEmployee(employee) {
-//   const response = await fetch(employeeControlerUrl, {
-//     method: "POST",
-//     headers: {
-//       "content-type": "application/json",
-//     },
-//     body: JSON.stringify(employee),
-//   });
-//   const data = await response.json();
-//   return data;
-// }
+
+
+
+
 
 // getEmployeeId (4);
