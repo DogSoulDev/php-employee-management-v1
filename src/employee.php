@@ -24,6 +24,7 @@
             </div>
             <div class="col-md-12">
                 <h1 class="employeeForm">Employee Form</h1>
+                <a href="http://127.0.0.1/php-employee-management-v1/src/dashboard.php">Back to Dashboard</a>
             </div>
         </div>
         <div class="row">
