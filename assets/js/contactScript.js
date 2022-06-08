@@ -48,3 +48,5 @@ const emailIsValid = (email) => {
 
 submitBtn.addEventListener("click", validate);
 
+
+

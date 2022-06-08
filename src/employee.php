@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/contact.css">
     <link rel="stylesheet" href="../assets/css/employeeStyle.css">
-    <title>Employee Form</title>
+    <title>Employee</title>
 
 </head>
 
@@ -45,11 +45,12 @@
                     <div class="form-group">
                         <label for="gender">Gender</label>
                         <select name="gender" id="gender" class="form-control">
-                            <option value="man">Man</option>
-                            <option value="woman">Woman</option>
+                            <option value="man">Male</option>
+                            <option value="woman">Female</option>
                         </select>
                     </div>
                     <div class="form-group">
+                        <br>
                         <label for="city">City</label>
                         <input type="text" class="form-control" id="city" name="city" placeholder="Enter address"  required>
                     </div>
