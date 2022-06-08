@@ -1,6 +1,7 @@
 "user strict";
 
 const usersContainer = document.getElementById("usersContainer");
+const addEmployee = document.getElementById('addEmployee');
 const employeeControlerUrl = "../src/library/employeeController.php?all_data";
 const employeeControllerUrlGet = "../src/library/employeeController.php?id=";
 
