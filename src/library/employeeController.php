@@ -22,9 +22,7 @@ else if($method === 'DELETE'){
    // $object = json_encode($employeeId_array);  
    echo $employeeId_array;
 
-} 
-
-else if ($method === 'POST'){   
+} else if ($method === 'POST'){   
    $newUser = array (
       "id"=> getNextIdentifier(),
       "name"=> $_POST['name'],
@@ -42,6 +40,22 @@ else if ($method === 'POST'){
    addEmployee($newUser);   
    phpAlert("Employee Successfully Saved!");
    header("Location:../dashboard.php");   
+}elseif($method === "PUT" && $_SERVER['QUERY_STRING'] === 'add'){
+   $data = json_decode(file_get_contents("php://input"), true);
+   $newUser = array (
+      "id"=> getNextIdentifier(),
+      "name"=> $data['name'],
+      "email"=> $data['email'],
+      "age"=> $data['age'],
+   "street"=> $data['streetAddress'],
+      "city"=> $data['city'],
+      "state"=> $data['state'],
+      "postalCode"=> $data['postalCode'],
+      "phoneNumber"=> $data['phoneNumber']
+   );
+   addEmployee($newUser); 
+   $json = file_get_contents("../../resources/employees.json");    
+    echo $json;
 }
 
 

@@ -1,4 +1,4 @@
-"user strict";
+import {addEventListenerToaddEmployee} from './addEmployee.js';
 
 const usersContainer = document.getElementById("usersContainer");
 const addEmployee = document.getElementById('addEmployee');
@@ -43,7 +43,7 @@ function updateTable(data) {
         `;
         usersContainer.append(tableRow);
         
-          
+        // addEventListenerToaddEmployee();
                
     });
 }
@@ -90,7 +90,7 @@ async function getEmployeeId(id) {
 }
 
 
-
+export {updateTable}
 
 
 

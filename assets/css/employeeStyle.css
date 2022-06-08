@@ -10,41 +10,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'arial';
+  font-family: "arial";
   font-size: 20px;
   font-weight: 300;
 }
-.employeeForm {
-  text-align: center;
-  font-weight: 300;
-  color: #983F40;
-  font-size: 100%;
-  text-shadow: 1px 1px 1px #fff;
-  font-family: 'Times New Roman', Times, serif;
-}
-.footer-text{
+
+.footer-text {
   text-align: center;
   font-weight: 500;
-  color: #983F40;
+  color: #983f40;
   font-size: 70%;
   text-shadow: 1px 1px 1px #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
 form {
-  padding: 20px;
-  border-radius: 10%;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  background: #FFFFFF;
-  position: relative;
-  box-shadow: -12px 2px 31px -7px rgba(151,62,63,1);
+  padding: 10px;
+  border-radius: 5%;
+  display: grid;
+  grid-column: auto;
+  background: #ffffff;
+  box-shadow: -12px 2px 31px -7px rgba(151, 62, 63, 1);
 }
 
 button {
-  width: 100%;
+  width: 40%;
   height: 45px;
   border-radius: 30px;
   border: none;
@@ -54,20 +44,17 @@ button {
   color: #f6f6f5;
   text-shadow: 1px 1px 1px #fff;
   cursor: pointer;
-  background: #983F40;
+  background: #983f40;
   transition: 0.3s;
 }
 
 button:hover {
-  box-shadow: 0px 3px 3px #983F40, 0px -3px 3px #fff;
+  box-shadow: 0px 3px 3px #983f40, 0px -3px 3px #fff;
 }
 
 button:focus {
-  box-shadow: inset 2px 2px 2px #983F40, inset -2px -2px 2px #fff;
+  box-shadow: inset 2px 2px 2px #983f40, inset -2px -2px 2px #fff;
 }
-
-
-
 
 .is-checked {
   color: #555;

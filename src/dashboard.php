@@ -17,7 +17,8 @@ session_start()
     <link rel="stylesheet" href="../assets/css/dashboardStyle.css">
 
 
-    <script src="../assets/js/index.js" defer></script>
+    <script src="../assets/js/index.js" type="module"></script>
+    <script src="../assets/js/addEmployee.js" type="module"></script>
 
     <title>Dashboard</title>
 </head>
@@ -49,7 +50,7 @@ session_start()
                     <th  scope="col">State</th>
                     <th  scope="col">Postal Code</th>
                     <th  scope="col">Phone Number</th>
-                    <th scope="col" id="addEmployee">&nbsp;<i class="fas fa-plus"></i></th>  
+                    <th scope="col" >&nbsp;<i class="fas fa-plus" id="addEmployee" type="button"></i></th>  
                 </tr>
             </thead>
             <tbody id="usersContainer"></tbody>
