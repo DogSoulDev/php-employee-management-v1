@@ -113,4 +113,7 @@ function displayAllEmployees(){
     print_r ($json);
 }
 
+function phpAlert(string $msg){
+    echo '<script type="text/javascript">alert("' . $msg . '")</script>';
+}
 ?>

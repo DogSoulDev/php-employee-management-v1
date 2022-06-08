@@ -69,18 +69,10 @@
                         <label for="phoneNumber">Phone number</label>
                         <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number"  required>
                     </div>
-
-
-
-
-
-
-
-
                     <div class="form-group">
-                    <button class="sendBtn" type="submit" id="submit" name="submit">Create</button>
-
+                        <button class="sendBtn" type="submit" id="submit" name="submit">Create</button>
                     </div>
+                    
                 </form>
             </div>
         </div>

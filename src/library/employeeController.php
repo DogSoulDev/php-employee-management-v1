@@ -37,12 +37,12 @@ else if ($method === 'POST'){
       "age"=> $_POST['age'],
       "postalCode"=> $_POST['postalCode'],
       "phoneNumber"=> $_POST['phoneNumber']
-   );  
-   // print_r($newUser);
+   );    
 
    addEmployee($newUser);
    
-
+   phpAlert("Employee Successfully Saved!");
+   // header('../dashboard.php');
 }
 
 

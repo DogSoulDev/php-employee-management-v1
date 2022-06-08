@@ -42,7 +42,8 @@ function updateTable(data) {
             <td>&nbsp;<a href="#" class='user-data' id="${user.id}" data-user="${user.id}" ><i class="fas fa-trash-alt" ></i></a></td>
         <tr>        
         `;
-        usersContainer.append(tableRow);   
+        usersContainer.append(tableRow);
+          
                
     });
 }
