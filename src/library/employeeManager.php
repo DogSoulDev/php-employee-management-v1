@@ -19,6 +19,8 @@ function addEmployee(array $newEmployee)
     
     
     return $json_string_modified;
+
+    
     
 
 }
@@ -45,18 +47,18 @@ function deleteEmployee(string $id)
     $json = file_get_contents("../../resources/employees.json");    
     $users_array = json_decode($json, true);  
 
-    foreach ($users_array as $user => $data){
-        echo "<pre>";
+    foreach ($users_array as $user => $data){      
 
         // print_r ($users_array);        
         if ($data['id'] == $id){
-            unset($users_array[$user]);
+            array_splice($users_array, $user, 1);
+            // unset($users_array[$user]);
         }
     }
     $json_string_modified = json_encode($users_array); 
     file_put_contents("../../resources/employees.json", $json_string_modified);
     
-    print_r ($json_string_modified);
+    return $json_string_modified;
 }
 
 
