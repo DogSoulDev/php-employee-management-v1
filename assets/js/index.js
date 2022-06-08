@@ -1,10 +1,8 @@
-"user strict";
+import {addEventListenerToaddEmployee} from './addEmployee.js';
 
 const usersContainer = document.getElementById("usersContainer");
 const employeeControlerUrl = "../src/library/employeeController.php?all_data";
 const employeeControllerUrlGet = "../src/library/employeeController.php?id=";
-const employeeControllerUrlPost = "../src/library/employeeController.php";
-
 
 // * Without async / await
 window.addEventListener('load', ()=>{
@@ -44,7 +42,7 @@ function updateTable(data) {
         `;
         usersContainer.append(tableRow);
         
-          
+        // addEventListenerToaddEmployee();
                
     });
 }
@@ -90,20 +88,8 @@ async function getEmployeeId(id) {
   return data;
 }
 
-async function getEmployeeData(id) {
-  const response = await fetch(`${employeeControllerUrlGet}${id}`, {
-    method: "GET",
-    headers: {
-      "content-type": "application/json",
-    },
-  });
-  const data = await response.json();
-  return data;
-}
 
-
-
-
+export {updateTable}
 
 
 

@@ -11,7 +11,6 @@ function addEmployee(array $newEmployee)
 
     
     array_push($users_array, $newEmployee);
-    print_r($users_array);
 
     $json_string_modified = json_encode($users_array); 
     file_put_contents("../../resources/employees.json", $json_string_modified);
