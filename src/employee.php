@@ -31,36 +31,52 @@
                 <form id="employeeForm" action="../src/library/employeeController.php" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
                     </div>
                     <div class="form-group">
-                        <label for="surname">Surname</label>
-                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter surname">
+                        <label for="lastName">Surname</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter surname" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                    </div>                   
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" class="form-control">
+                            <option value="man">Man</option>
+                            <option value="woman">Woman</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter address"  required>
                     </div>
                     <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" name="address" placeholder="Enter address">
+                        <label for="street">Street Address</label>
+                        <input type="text" class="form-control" id="street" name="street" placeholder="Enter street address"  required>
                     </div>
                     <div class="form-group">
-                        <label for="salary">Salary</label>
-                        <input type="text" class="form-control" id="salary" name="salary" placeholder="Enter salary">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" name="state" placeholder="Enter state"  required>
                     </div>
-                    <div class="form-group">
-                        <label for="position">Position</label>
-                        <input type="text" class="form-control" id="position" name="position" placeholder="Enter position">
-                    </div>
-                    <div class="form-group">
-                    <button class="sendBtn" type="submit" id="submit" name="submit">Create</button>
 
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="text" class="form-control" id="age" name="age" placeholder="Enter age"  required>
                     </div>
+                    <div class="form-group">
+                        <label for="postalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Enter postal code"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone number</label>
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number"  required>
+                    </div>
+                    <div class="form-group">
+                        <button class="sendBtn" type="submit" id="submit" name="submit">Create</button>
+                    </div>
+                    
                 </form>
             </div>
         </div>

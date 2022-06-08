@@ -21,6 +21,28 @@ else if($method === 'DELETE'){
    $employeeId_array = deleteEmployee($_GET['id']);
    $object = json_encode($employeeId_array);  
    echo $object;
+
+} 
+
+else if ($method === 'POST'){   
+   $newUser = array (
+      "id"=> getNextIdentifier(),
+      "name"=> $_POST['name'],
+      "lastName"=> $_POST['lastName'],
+      "email"=> $_POST['email'],
+      "gender"=> $_POST['gender'],
+      "city"=> $_POST['city'],
+      "street"=> $_POST['street'],
+      "state"=> $_POST['state'],
+      "age"=> $_POST['age'],
+      "postalCode"=> $_POST['postalCode'],
+      "phoneNumber"=> $_POST['phoneNumber']
+   );    
+
+   addEmployee($newUser);
+   
+   phpAlert("Employee Successfully Saved!");
+   // header('../dashboard.php');
 }
 
 
