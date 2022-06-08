@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <script type="text/javascript" src="./assets/js/contactScript.js" def></script>
+    <script type="text/javascript" src="./assets/js/contactScript.js" type="module"></script>
     <link rel="stylesheet" href="../../assets/css/login.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/normalize.css">
