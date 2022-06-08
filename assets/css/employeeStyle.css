@@ -35,6 +35,7 @@
 form {
   padding: 20px;
   border-radius: 10%;
+  display: flex;
   gap: 20px;
   flex-direction: column;
   background: #FFFFFF;
