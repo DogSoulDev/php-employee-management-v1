@@ -1,10 +1,11 @@
 "user strict";
 
 const usersContainer = document.getElementById("usersContainer");
+const addEmployee = document.getElementById("addEmployee");
 const employeeControlerUrl = "../src/library/employeeController.php?all_data";
 const employeeControllerUrlGet = "../src/library/employeeController.php?id=";
 
-// * Without async / await
+
 window.addEventListener('load', ()=>{
      fetch(employeeControlerUrl)
     .then(response=> response.json())
@@ -40,10 +41,7 @@ function updateTable(data) {
             <td>&nbsp;<a href="#" class='user-data' id="${user.id}" data-user="${user.id}" ><i class="fas fa-trash-alt" ></i></a></td>
         <tr>
         `;
-        usersContainer.append(tableRow);
-        
-          
-               
+        usersContainer.append(tableRow);       
     });
 }
 
@@ -75,8 +73,6 @@ async function deleteEmployee(id){
     console.log(data);
 }
 
-// deleteEmployee(1);
-
 async function getEmployeeId(id) {
   const response = await fetch(`${employeeControllerUrlGet}${id}`, {
     method: "GET",
@@ -89,10 +85,47 @@ async function getEmployeeId(id) {
 }
 
 
+// Add employee on dashboard
+addEmployee.addEventListener('click', ()=>{
+    const tableRow = document.createElement('tr');
+    tableRow.innerHTML = 
+    `
+    <form id="formDashboard" action="../src/library/employeeController.php" method="POST">
+    <tr>        
+        <td>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </td>
+        <td>
+            <input type="text" class="form-control" id="lastName" name="lastName" required>
+        </td>
+        <td>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+        </td>
+        <td><input type="text" class="form-control" id="age" name="age" required></td>
+        <td><input type="text" class="form-control" id="street" name="street" required></td>
+        <td><input type="text" class="form-control" id="city" name="city" required></td>
+        <td><input type="text" class="form-control" id="state" name="state" required></td>
+        <td><input type="text" class="form-control" id="postalCode" name="postalCode" required></td>
+        <td><input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required></td>
+        <td>
+            <button class="sendBtnSmall" type="submit" id="addEmployeeSmall" name="submit">+</button>          
+        </td>
+    <tr>
+    </form>
+    `;
+    usersContainer.insertAdjacentElement('afterbegin', tableRow);
+
+    const formDashboard = new FormData();
+    console.log(formDashboard);
 
 
+    // const formDashboard = document.getElementById('formDashboard');    
+    // formDashboard.addEventListener('submit', function(e){
+    //     // e.preventDefault();
+    //     alert('works!');
+    //     const formData = new FormData(this);
+    //     console.log(formData);
+    // })
+    
 
-
-
-
-// getEmployeeId (4);
+})

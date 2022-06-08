@@ -49,11 +49,13 @@ session_start()
                     <th  scope="col">State</th>
                     <th  scope="col">Postal Code</th>
                     <th  scope="col">Phone Number</th>
-                    <th scope="col" >&nbsp;<i class="fas fa-plus"></i></th>  
+                    <th scope="col" id="addEmployee">&nbsp;<i class="fas fa-plus"></i></th>  
                 </tr>
             </thead>
             <tbody id="usersContainer"></tbody>
             <input type="hidden" name="action" value="listUsers">
+
+            
             
         </table>
     </main>
