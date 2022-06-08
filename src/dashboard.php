@@ -25,13 +25,13 @@ session_start()
 <body>
           <nav class="navbar navbar-expand bg-light navbar__container">
         <div class="container-fluid">
-            <a href="../assets/img/b.png" class="employeeSelector">Don't Click</a>
+            <a href="../assets/img/b.png" class="employeeSelector">10min to hit the Dark Side</a>
             <div class="navbar">
                 <a class="navlinks" aria-current="page"
                     href="http://127.0.0.1/php-employee-management-v1/src/dashboard.php" >Dashboard</a>
                 <a class="navlinks"
                     href="http://127.0.0.1/php-employee-management-v1/src/employee.php">Employees</a>
-                <button type="button" class="navlinks" id="logoutBtn">LogOut</button>
+                <a type="button" class="navlinks" id="logoutBtn" href="http://127.0.0.1/php-employee-management-v1/src/library/logout.php">LogOut</a>
                 
             </div>
         </div>
@@ -57,6 +57,10 @@ session_start()
             
         </table>
     </main>
+
+
+</script>
+
 
 </body>
 
