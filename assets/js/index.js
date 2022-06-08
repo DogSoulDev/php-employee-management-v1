@@ -11,9 +11,9 @@ window.addEventListener('load', ()=>{
     .then(response=> response.json())
     .then (data=> {
         console.log(data);        
-        console.log(Object.values(data));        
+        console.log(Object.values(data)); 
         updateTable(data);        
-        addEventListenerToDeleteBtn();  
+        addEventListenerToDeleteBtn(data);
     });
 });
 
@@ -29,7 +29,7 @@ function updateTable(data) {
     Object.values(data).forEach(user=>{
         const tableRow = document.createElement('tr');
         tableRow.innerHTML = `
-        <tr>
+        <tr>        
             <td>${user.id}</td>
             <td>${user.name}</td>
             <td>${user.email}</td>
@@ -57,7 +57,7 @@ function addEventListenerToDeleteBtn(){
             console.log(aElement);   
             const id = aElement.getAttribute('data-user');
             console.log(id);
-            deleteEmployee(id);
+            deleteEmployee(id);                        
         })
     })
 }
@@ -72,6 +72,7 @@ async function deleteEmployee(id){
     });
     const data = await response.json();    
     updateTable(data);
+    console.log(data);
 }
 
 // deleteEmployee(1);
