@@ -15,7 +15,7 @@ session_start();
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="./assets/js/index.js" type="module"></script>
-    
+
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
@@ -50,10 +50,10 @@ session_start();
             <!--</a>-->
         </form>
         <div class="footer-text">
-                    <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
-                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
-                        href="https://github.com/DogSoulDev">Javier Fernández</a>
-                </div>
+            <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
+            <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp; <a
+                href="https://github.com/DogSoulDev">Javier Fernández</a>
+        </div>
         <div id="error"></div>
         <div id="success-msg"></div>
     </div>

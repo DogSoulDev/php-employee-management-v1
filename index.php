@@ -31,9 +31,10 @@ checkUrl($_GET);
             <img class="onepunch" src="./assets/img/v_50.png">
             <section>
                 <form action="./src/library/loginController.php" method="POST">
-                <p class="log-in">Employee Management</p>
+                    <p class="log-in">Employee Management</p>
                     <div class="input-container">
-                        <input name="username" type="text" placeholder="Username" maxlength="10" required></div>
+                        <input name="username" type="text" placeholder="Username" maxlength="10" required>
+                    </div>
                     <div class="input-container">
                         <input name="password" type="password" placeholder="Password" required>
                     </div>
@@ -47,17 +48,17 @@ checkUrl($_GET);
             </section>
         </div>
         <div class="footer-text">
-                    <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
-                    <a href="https://github.com/jose-cuevas">Jose Cuevas</a>  &amp; 
-                    <a href="https://github.com/DogSoulDev">Javier Fernández</a>
-                    <div>
-                    <a href="./contact.php">Contact</a>
-                    </div>
-                </div>
+            <p class="copy">&copy;Assembler Institute Barcelona all rights reserved 2022.</p>
+            <a href="https://github.com/jose-cuevas">Jose Cuevas</a> &amp;
+            <a href="https://github.com/DogSoulDev">Javier Fernández</a>
+            <div>
+                <a href="./contact.php">Contact</a>
+            </div>
+        </div>
 
-            </form>
+        </form>
 
-            <?php
+        <?php
 
 ?>
     </main>
